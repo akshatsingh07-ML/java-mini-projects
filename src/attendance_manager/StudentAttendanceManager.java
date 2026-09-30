@@ -99,6 +99,7 @@ public class StudentAttendanceManager {
                     break;
 
                 case 5:
+                    System.out.println("------------THANK YOU------------");
                     return;
 
                 default:
