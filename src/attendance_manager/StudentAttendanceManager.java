@@ -100,6 +100,7 @@ public class StudentAttendanceManager {
 
                 case 5:
                     System.out.println("------------THANK YOU------------");
+                    sc.close();
                     return;
 
                 default:

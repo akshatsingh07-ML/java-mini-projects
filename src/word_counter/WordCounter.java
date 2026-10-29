@@ -10,10 +10,11 @@ public class WordCounter {
             System.out.println("\n===== WORD COUNTER =====");
             System.out.println("1. Do you want to count words from a text file?");
             System.out.println("2. DO you want to count words from input?");
+            System.out.println("3. Exit");
             System.out.print("Enter choice: ");
 
             if (!sc.hasNextInt()) {
-                System.out.println("Invalid input! Please enter 1 or 2.");
+                System.out.println("Invalid input! Please enter 1, 2, or 3.");
                 sc.nextLine();
                 continue;
             }
@@ -50,6 +51,11 @@ public class WordCounter {
                     }
                     System.out.println("Word Count: " + cnt);
                     break;
+
+                case 3:
+                    System.out.println("------------THANK YOU------------");
+                    sc.close();
+                    return;
 
                 default:
                     System.out.println("Invalid Choice! Choose again.");
